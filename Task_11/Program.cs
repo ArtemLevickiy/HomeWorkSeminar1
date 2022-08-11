@@ -1,13 +1,14 @@
 ﻿int number = new Random().Next(1, 1000);
 Console.WriteLine(number);
-int digitIndex = 2;
-int digit      = number.ToString()[digitIndex] - '0';
-if (number < 100)
+
+if (number > 99)
 {
-    Console.Write("Нет третей цифры");
+    int digitIndex = 2;
+    int digit      = number.ToString()[digitIndex] - '0';
+    Console.Write(digit);
 }
 else
 {
-    Console.Write(digit);
+    Console.Write("Нет третей цифры");
 }
 
